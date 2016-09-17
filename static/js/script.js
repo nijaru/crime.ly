@@ -1,34 +1,38 @@
-var markers = [];
+$(document).ready(function(){
+  console.log("READY")
+  // base URI
+  url = 'https://data.sfgov.org/resource/7a3q-s79u.json';
 
-function initMap() {
-  var myLatLng = {lat: 37.784691, lng:  -122.397804};
-
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 10,
-    center: myLatLng
-  });
-
-
-  while(markers.length <= 100){
-    console.log('testing')
-
-    var latBase = myLatLng.lat.toString().slice(0,-4)
-    var lngBase = myLatLng.lng.toString().slice(0,-4)
-
-    var randomEnd1 = Math.random(2).toString().slice(2,6)
-    var randomEnd2 = Math.random(2).toString().slice(2,6)
-
-
-    myLatLng = {lat: parseFloat(latBase + randomEnd1.toString()), lng: parseFloat(lngBase + randomEnd2.toString())}
-    var marker = new google.maps.Marker({
-      position: myLatLng,
-      map: map,
-      title: 'Hello World!'
+  //Map
+  window.initMap = function() {
+    //map center
+    var myLatLng = {lat: 37.784691, lng:  -122.397804};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: myLatLng
     });
-    markers.push(marker)
+
+    //parsing data from JSON
+    var locations = [];
+    $.ajax({
+      url: url,
+      dataType: 'json',
+      async: false,
+      success: function(data){
+          data.forEach(function(data){
+            myLatLng = {lat: parseFloat(data.y), lng: parseFloat(data.x)}
+            locations.push(myLatLng)
+          });
+      }
+    });
+
+    //adding markers to map
+    locations.forEach(function(data){
+      var marker = new google.maps.Marker({
+        position: data,
+        map: map,
+        title: 'Hello World!'
+      });
+    })
   }
-
-
-  console.log(myLatLng)
-
-}
+})
