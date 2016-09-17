@@ -3,11 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
     <title>Crime.ly</title>
   </head>
   <body>
-    <div class="container">
       <div id="map"></div>
-    </div>
+    <script type="text/javascript" src="static/js/jquery-3.1.0.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy1WWTc_lYSv_sAgSs7bPvSFnI1eUWAp0&callback=initMap" async defer>
+    </script>
+    <script type="text/javascript" src="static/js/script.js"></script>
   </body>
 </html>
