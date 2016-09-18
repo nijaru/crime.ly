@@ -30,6 +30,9 @@ Crime.ly is MIT licensed.
 ## * Our Team
 ![alt tag](http://i.imgur.com/obzWMhj.png)
 
+
+### Team Members
+
 [Nick Russo](https://github.com/sinwav)
 
 [Jason Sutter](https://github.com/jasonsutter87)
