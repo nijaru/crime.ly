@@ -10,7 +10,7 @@
   <title>Crime.ly</title>
 
   <!-- Bootstrap Core CSS -->
-  <link href="static/css/bootstrap.css" rel="stylesheet">
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link href="static/css/stylish-portfolio.css" rel="stylesheet">
@@ -19,44 +19,9 @@
   <!-- Custom Fonts -->
   <link href="static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
 </head>
 
 <body>
-
-  <!-- Navigation -->
-    <!-- <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="#services" onclick=$("#menu-close").click();>Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
-            </li>
-        </ul>
-    </nav> -->
-
-  <!-- Header -->
   <header id="top" class="header">
     <div class="text-vertical-center title-color">
       <h1>Crime.ly</h1>
@@ -65,9 +30,6 @@
       <a href="map.html" class="btn btn-dark btn-lg">Go To Map</a>
     </div>
   </header>
-
-
-
   <!-- Services -->
   <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
   <section id="services" class="services bg-primary">
@@ -81,25 +43,24 @@
               <div class="service-item">
                 <span class="fa-stack fa-4x">
                   <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                  <i class="fa fa-compass fa-stack-1x text-primary"></i>
                 </span>
                 <h4>
                   <strong>Google maps API</strong>
                 </h4>
-                <p>Utilize google maps API to display crime data.</p>
-
+                <p>Utilizes Google Maps API to display crimes and their locations.</p>
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
               <div class="service-item">
                 <span class="fa-stack fa-4x">
                   <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                  <i class="fa fa-cloud fa-stack-1x text-primary"></i>
                 </span>
                 <h4>
                   <strong>SF Open Data</strong>
                 </h4>
-                <p>Utilize SF public data for crime data.</p>
+                <p>Utilizes SF Open Data's crime data to plot points.</p>
                 <a href="https://data.sfgov.org/" class="btn btn-light">Learn More</a>
               </div>
             </div>
@@ -113,7 +74,6 @@
                   <strong>Safety</strong>
                 </h4>
                 <p>Provide the citizens with the knowledge and foresight to make smart decisions.</p>
-
               </div>
             </div>
           </div>
@@ -139,14 +99,14 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2>Why Crime.ly</h2>
-          <hr class="small">
-            <div class = "container">
-                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                    <p>sads</p>
-                    </div>
-                 </div>
-             </div>
+          <!-- <hr class="small"> -->
+          <div class = "container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <p>Violent crime is prevalent throughout much of the bay area, but it is hard to know where this occurs. SF Open Data provides information on all the crimes commited in San Francisco, but this data is hard to work through. We wanted to provide an easy to view map that allows users to view where crimes are more common in the city. This will allow our friends and users to stay safe out on the streets and hopefully prevent more violent crime in our community.</p>
+              </div>
+            </div>
+          </div>
           <!-- /.row (nested) -->
         </div>
         <!-- /.col-lg-10 -->
@@ -156,58 +116,41 @@
     <!-- /.container -->
   </section>
 
-  <!-- Call to Action -->
-
-  <!-- Map -->
-  <!-- <section id="contact" class="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-    <br />
-    <small>
-      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-    </small>
-  </iframe>
-</section> -->
-
-<!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 col-lg-offset-1 text-center">
-        <h4><strong>Crime.ly</strong>
-        </h4>
-        <p>633 Folsom st
-          <br>San Francisco, CA 94107</p>
-          <ul class="list-unstyled">
-            <li><i class="fa fa-phone fa-fw fa-black"></i> (123) 456-7890</li>
-            <li><i class="fa fa-envelope-o fa-fw fa-black"></i> <a href="mailto:name@example.com" class="red">help@crime.ly</a>
-            </li>
-          </ul>
-          <br>
-          <ul class="list-inline">
-            <li>
-              <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-            </li>
-          </ul>
-          <hr class="small">
-          <p class="text-muted">Copyright &copy; Crime.ly 2016</p>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+          <h4><strong>Crime.ly</strong>
+          </h4>
+          <p>633 Folsom st
+            <br>San Francisco, CA 94107</p>
+            <ul class="list-unstyled">
+              <li><i class="fa fa-phone fa-fw fa-black"></i> (123) 456-7890</li>
+              <li><i class="fa fa-envelope-o fa-fw fa-black"></i> <a href="mailto:name@example.com" class="red">help@crime.ly</a>
+              </li>
+            </ul>
+            <br>
+            <ul class="list-inline">
+              <li>
+                <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+              </li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Crime.ly 2016</p>
+          </div>
         </div>
       </div>
-    </div>
-    <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-  </footer>
+      <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+    <!-- <script src="static/js/jquery-3.1.0.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 
-  <!-- jQuery -->
-  <script src="static/js/jquery.js"></script>
-
-  <!-- Bootstrap Core JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
+  </html>
