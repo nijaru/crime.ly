@@ -17,3 +17,15 @@ Feel free to fork the project and add features or use it for your own projects.
 Crime.ly is MIT licensed.
 
 ## Screenshots
+
+## * Crime.ly
+![alt tag](http://i.imgur.com/qGAVNLF.png)
+
+## * Beautiful Design
+![alt tag](http://i.imgur.com/obzWMhj.png)
+
+## * Find out crime in your area
+![alt tag](http://i.imgur.com/ZomasTk.png)
+
+## * Look for specific crimes
+![alt tag](http://i.imgur.com/0xGfh3B.png)
