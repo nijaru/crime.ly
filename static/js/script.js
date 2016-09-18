@@ -20,8 +20,10 @@ $(document).ready(function(){
       async: false,
       success: function(data){
           data.forEach(function(data){
-            myLatLng = {lat: parseFloat(data.y), lng: parseFloat(data.x)}
-            locations.push(myLatLng)
+            latLngCat = {
+              latLng: {lat: parseFloat(data.y), lng: parseFloat(data.x)},
+              crime: data.category }
+            locations.push(latLngCat)
           });
       }
     });
@@ -29,9 +31,9 @@ $(document).ready(function(){
     //adding markers to map
     locations.forEach(function(data){
       var marker = new google.maps.Marker({
-        position: data,
+        position: data.latLng,
         map: map,
-        title: 'Hello World!'
+        title: data.crime
       });
     })
   }
