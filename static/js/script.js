@@ -23,7 +23,7 @@ $(document).ready(function(){
       //     data.category !== "OTHER OFFENSES") {
             latLngCat = {
               latLng: {lat: parseFloat(data.y), lng: parseFloat(data.x)},
-              crime: data.category }
+              crime: data.category}
             markersData.push(latLngCat)
           // }
     };
@@ -44,8 +44,6 @@ $(document).ready(function(){
     markersData.forEach(function(data){
 
       var icon = ['./static/img/Blue_Marker.png', './static/img/Green_Marker.png', './static/img/Yellow_Marker.png', './static/img/Red_Marker.png']
-
-
       //Red
       if(data.crime == 'ARSON' ||
         data.crime == 'ASSAULT' ||
