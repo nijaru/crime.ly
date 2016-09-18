@@ -13,17 +13,27 @@ $(document).ready(function(){
     });
 
     //parsing data from JSON
+
     var markersData = [];
+
+    var filterCategory = function(data) {
+      if (data.category !== "DRIVING UNDER THE INFLUENCE" ||
+          data.category !== "NON-CRIMINAL" ||
+          data.category !== "OTHER OFFENSES") {
+            latLngCat = {
+              latLng: {lat: parseFloat(data.y), lng: parseFloat(data.x)},
+              crime: data.category }
+            markersData.push(latLngCat)
+          }
+    };
+
     $.ajax({
       url: url,
       dataType: 'json',
       async: false,
       success: function(data){
           data.forEach(function(data){
-            latLngCat = {
-              latLng: {lat: parseFloat(data.y), lng: parseFloat(data.x)},
-              crime: data.category }
-            markersData.push(latLngCat)
+            filterCategory(data)
           });
       }
     });
