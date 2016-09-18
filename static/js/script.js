@@ -13,7 +13,7 @@ $(document).ready(function(){
     });
 
     //parsing data from JSON
-    var locations = [];
+    var markersData = [];
     $.ajax({
       url: url,
       dataType: 'json',
@@ -23,13 +23,13 @@ $(document).ready(function(){
             latLngCat = {
               latLng: {lat: parseFloat(data.y), lng: parseFloat(data.x)},
               crime: data.category }
-            locations.push(latLngCat)
+            markersData.push(latLngCat)
           });
       }
     });
 
     //adding markers to map
-    locations.forEach(function(data){
+    markersData.forEach(function(data){
       var marker = new google.maps.Marker({
         position: data.latLng,
         map: map,
