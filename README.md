@@ -1,5 +1,5 @@
 # Crime.ly
-Maps utilizing SF Open Data - Built apart of Hack Against Violence
+Maps utilizing SF Open Data - Built for Hack Against Violence
 
 ## Problem
 Crime is prevalent in the Bay Area, and it is hard to know what neighborhoods are safe to walk around in unless you are from the area. We wanted to create a way for users to be more aware of where crimes occur throughout San Francisco so they can make smarter, safer choices.
