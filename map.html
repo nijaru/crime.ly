@@ -3,6 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- <meta name="description" content="">
+    <meta name="author" content=""> -->
+
+    <title>Crime.ly</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="static/css/stylish-portfolio.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
     <style>
       html, body {
         height: 100%;
@@ -16,58 +35,84 @@
         height: 25%;
         position: absolute;
       }
+      .search-nav{
+        margin-top: 2%;
+        margin-left: 50%;
+        width: 500px;
+      }
     </style>
     <title>Crime.ly</title>
   </head>
   <body>
-    <div id="map">
-    </div>
-    <div id="searchBox">
-      <select onchange="filterMarkers(this.value);">
-          <option value="">Crimes</option>
-          <option value="ARSON">ARSON</option>
-          <option value="ASSAULT">ASSAULT</option>
-          <option value="BAD CHECKS">BAD CHECKS</option>
-          <option value="BRIBERY">BRIBERY</option>
-          <option value="BURGLARY">BURGLARY</option>
-          <option value="DISORDERLY CONDUCT">DISORDERLY CONDUCT</option>
-          <option value="DRIVING UNDER THE INFLUENCE">DRIVING UNDER THE INFLUENCE</option>
-          <option value="DRUG/NARCOTIC">DRUG/NARCOTIC</option>
-          <option value="DRUNKENNESS">DRUNKENNESS</option>
-          <option value="EMBEZZLEMENT">EMBEZZLEMENT</option>
-          <option value="EXTORTION">EXTORTION</option>
-          <option value="FAMILY OFFENSES">FAMILY OFFENSES</option>
-          <option value="FORGERY/COUNTERFEITING">FORGERY/COUNTERFEITING</option>
-          <option value="FRAUD">FRAUD</option>
-          <option value="GAMBLING">GAMBLING</option>
-          <option value="KIDNAPPING">KIDNAPPING</option>
-          <option value="LARCENY/THEFT">LARCENY/THEFT</option>
-          <option value="LIQUOR LAWS">LIQUOR LAWS</option>
-          <option value="LOITERING">LOITERING</option>
-          <option value="MISSING PERSON">MISSING PERSON</option>
-          <option value="NON-CRIMINAL">NON-CRIMINAL</option>
-          <option value="OTHER OFFENSES">OTHER OFFENSES</option>
-          <option value="PORNOGRAPHY/OBSCENE MAT">PORNOGRAPHY/OBSCENE MAT</option>
-          <option value="PROSTITUTION">PROSTITUTION</option>
-          <option value="RECOVERED VEHICLE">RECOVERED VEHICLE</option>
-          <option value="ROBBERY">ROBBERY</option>
-          <option value="RUNAWAY">RUNAWAY</option>
-          <option value="SECONDARY CODES">SECONDARY CODES</option>
-          <option value="SEX OFFENSES, FORCIBLE">SEX OFFENSES, FORCIBLE</option>
-          <option value="SEX OFFENSES, NON FORCIBLE">SEX OFFENSES, NON FORCIBLE</option>
-          <option value="STOLEN PROPERTY">STOLEN PROPERTY</option>
-          <option value="SUICIDE">SUICIDE</option>
-          <option value="SUSPICIOUS OCC">SUSPICIOUS OCC</option>
-          <option value="TREA">TREA</option>
-          <option value="TRESPASS">TRESPASS</option>
-          <option value="VANDALISM">VANDALISM</option>
-          <option value="VEHICLE THEFT">VEHICLE THEFT</option>
-          <option value="WARRANTS">WARRANTS</option>
-          <option value="WEAPON LAWS">WEAPON LAWS</option>
-        </select>
-    <script type="text/javascript" src="static/js/jquery-3.1.0.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy1WWTc_lYSv_sAgSs7bPvSFnI1eUWAp0&callback=initMap" async defer>
-    </script>
-    <script type="text/javascript" src="static/js/script.js"></script>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Crime.ly</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="map.html">Crime Maps</a>
+              <li>
+                <div class="search-nav">
+                  <select class="form-control" onchange="filterMarkers(this.value);">
+                    <option value="">Crimes</option>
+                    <option value="ARSON">ARSON</option>
+                    <option value="ASSAULT">ASSAULT</option>
+                    <option value="BAD CHECKS">BAD CHECKS</option>
+                    <option value="BRIBERY">BRIBERY</option>
+                    <option value="BURGLARY">BURGLARY</option>
+                    <option value="DISORDERLY CONDUCT">DISORDERLY CONDUCT</option>
+                    <option value="DRIVING UNDER THE INFLUENCE">DRIVING UNDER THE INFLUENCE</option>
+                    <option value="DRUG/NARCOTIC">DRUG/NARCOTIC</option>
+                    <option value="DRUNKENNESS">DRUNKENNESS</option>
+                    <option value="EMBEZZLEMENT">EMBEZZLEMENT</option>
+                    <option value="EXTORTION">EXTORTION</option>
+                    <option value="FAMILY OFFENSES">FAMILY OFFENSES</option>
+                    <option value="FORGERY/COUNTERFEITING">FORGERY/COUNTERFEITING</option>
+                    <option value="FRAUD">FRAUD</option>
+                    <option value="GAMBLING">GAMBLING</option>
+                    <option value="KIDNAPPING">KIDNAPPING</option>
+                    <option value="LARCENY/THEFT">LARCENY/THEFT</option>
+                    <option value="LIQUOR LAWS">LIQUOR LAWS</option>
+                    <option value="LOITERING">LOITERING</option>
+                    <option value="MISSING PERSON">MISSING PERSON</option>
+                    <option value="NON-CRIMINAL">NON-CRIMINAL</option>
+                    <option value="OTHER OFFENSES">OTHER OFFENSES</option>
+                    <option value="PORNOGRAPHY/OBSCENE MAT">PORNOGRAPHY/OBSCENE MAT</option>
+                    <option value="PROSTITUTION">PROSTITUTION</option>
+                    <option value="RECOVERED VEHICLE">RECOVERED VEHICLE</option>
+                    <option value="ROBBERY">ROBBERY</option>
+                    <option value="RUNAWAY">RUNAWAY</option>
+                    <option value="SECONDARY CODES">SECONDARY CODES</option>
+                    <option value="SEX OFFENSES, FORCIBLE">SEX OFFENSES, FORCIBLE</option>
+                    <option value="SEX OFFENSES, NON FORCIBLE">SEX OFFENSES, NON FORCIBLE</option>
+                    <option value="STOLEN PROPERTY">STOLEN PROPERTY</option>
+                    <option value="SUICIDE">SUICIDE</option>
+                    <option value="SUSPICIOUS OCC">SUSPICIOUS OCC</option>
+                    <option value="TREA">TREA</option>
+                    <option value="TRESPASS">TRESPASS</option>
+                    <option value="VANDALISM">VANDALISM</option>
+                    <option value="VEHICLE THEFT">VEHICLE THEFT</option>
+                    <option value="WARRANTS">WARRANTS</option>
+                    <option value="WEAPON LAWS">WEAPON LAWS</option>
+                  </select>
+                  </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="map">
+      </div>
+      <script type="text/javascript" src="static/js/jquery-3.1.0.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy1WWTc_lYSv_sAgSs7bPvSFnI1eUWAp0&callback=initMap" async defer>
+      </script>
+      <script type="text/javascript" src="static/js/script.js"></script>
   </body>
 </html>
