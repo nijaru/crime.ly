@@ -21,11 +21,19 @@ Crime.ly is MIT licensed.
 ## * Landing Page
 ![alt tag](http://i.imgur.com/qGAVNLF.png)
 
-## * Our Team
-![alt tag](http://i.imgur.com/obzWMhj.png)
-
 ## * Find out crime in your area
 ![alt tag](http://i.imgur.com/ZomasTk.png)
 
 ## * Filter for specific crimes
 ![alt tag](http://i.imgur.com/0xGfh3B.png)
+
+## * Our Team
+![alt tag](http://i.imgur.com/obzWMhj.png)
+
+[Nick Russo](https://github.com/sinwav)
+
+[Jason Sutter](https://github.com/jasonsutter87)
+
+[Jesus Garcia](https://github.com/heysusgarcia)
+
+[Simon Lu](https://github.com/Simonl0425)
