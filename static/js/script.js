@@ -15,6 +15,7 @@ $(document).ready(function(){
     //parsing data from JSON
 
     var markersData = [];
+    var gMarkers = [];
 
     var filterCategory = function(data) {
       if (data.category !== "DRIVING UNDER THE INFLUENCE" ||
@@ -43,8 +44,22 @@ $(document).ready(function(){
       var marker = new google.maps.Marker({
         position: data.latLng,
         map: map,
-        title: data.crime
+        title: data.crime,
+        category: data.crime
       });
+      gMarkers.push(marker);
     })
+
+    filterMarkers = function (category) {
+      for (var i = 0; i < markersData.length; i++) {
+        marker = gMarkers[i];
+        if (marker.category == category || category.length === 0) {
+          marker.setVisible(true);
+        }
+        else {
+          marker.setVisible(false);
+        }
+      }
+    }
   }
 })
