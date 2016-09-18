@@ -17,14 +17,13 @@
         position: absolute;
       }
     </style>
-    <link rel="stylesheet" typ="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/components/dropdown.min.css">
     <title>Crime.ly</title>
   </head>
   <body>
     <div id="map">
     </div>
     <div id="searchBox">
-      <select class="ui fluid search dropdown" id="type" onchange="filterMarkers(this.value);">
+      <select onchange="filterMarkers(this.value);">
           <option value="">Crimes</option>
           <option value="ARSON">ARSON</option>
           <option value="ASSAULT">ASSAULT</option>
@@ -66,9 +65,7 @@
           <option value="WARRANTS">WARRANTS</option>
           <option value="WEAPON LAWS">WEAPON LAWS</option>
         </select>
-    </div>
     <script type="text/javascript" src="static/js/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/components/dropdown.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy1WWTc_lYSv_sAgSs7bPvSFnI1eUWAp0&callback=initMap" async defer>
     </script>
     <script type="text/javascript" src="static/js/script.js"></script>
