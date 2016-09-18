@@ -6,3 +6,31 @@ html, body {
     #map {
       height: 100%;
     }
+
+.title-color {
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 3px 3px 5px #ff0000;
+}
+
+header div h3 {
+    font-size: 1.2em !important;
+}
+
+header div a {
+    text-shadow: none;
+}
+
+.fa {
+    color: #B22222;
+    background-color: white;
+    border-radius: 70px;
+}
+
+.fa-black {
+    color: black;
+}
+
+.red {
+    color: #B22222;
+}
