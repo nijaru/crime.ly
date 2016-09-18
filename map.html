@@ -19,34 +19,13 @@
 
     <!-- Custom Fonts -->
     <link href="static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/map.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-
-    <style>
-      html, body {
-        height: 100%;
-        margin-bottom: 10;
-        padding: 0;
-      }
-      #map {
-        height: 100%;
-      }
-      #searchBox {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-      }
-
-      .search-nav{
-        margin-top: 2%;
-        margin-left: 50%;
-        width: 500px;
-      }
-    </style>
     <title>Crime.ly</title>
   </head>
   <body>
-      <nav class="navbar navbar-inverse">
+      <nav class="navbar red">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -57,13 +36,11 @@
             <a class="navbar-brand" href="index.html">Crime.ly</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="map.html">Crime Maps</a>
+            <ul class="nav navbar-nav navbar-right">
               <li>
                 <div class="search-nav">
                   <select class="form-control" onchange="filterMarkers(this.value);">
-                    <option value="">Crimes</option>
+                    <option value="">All Crimes</option>
                     <option value="ARSON">ARSON</option>
                     <option value="ASSAULT">ASSAULT</option>
                     <option value="BAD CHECKS">BAD CHECKS</option>
@@ -110,8 +87,7 @@
           </div>
         </div>
       </nav>
-      <div id="map">
-      </div>
+      <div id="map"></div>
       <script type="text/javascript" src="static/js/jquery-3.1.0.min.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy1WWTc_lYSv_sAgSs7bPvSFnI1eUWAp0&callback=initMap" async defer>
       </script>
