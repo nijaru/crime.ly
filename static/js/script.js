@@ -1,6 +1,3 @@
-
-var images = ['/img/Blue_Marker.png']
-
 $(document).ready(function(){
   console.log("READY")
   // base URI
@@ -41,26 +38,6 @@ $(document).ready(function(){
           });
       }
     });
-
-
-// Blue
-// DISORDERLY CONDUCT
-// DRIVING UNDER THE INFLUENCE
-// NON-CRIMINAL
-// OTHER OFFENSES
-// RUNAWAY
-//
-// Green
-// BAD CHECKS
-// BRIBERY
-// EMBEZZLEMENT
-// EXTORTION
-// FORGERY/COUNTERFEITING
-// FRAUD
-// GAMBLING
-// RECOVERED VEHICLE
-// SECONDARY CODES
-
 
 
     //adding markers to map
