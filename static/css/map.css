@@ -4,6 +4,7 @@ html, body {
   padding: 0;
 }
 #map {
+  margin-top: -20px;
   height: 100%;
 }
 #searchBox {
