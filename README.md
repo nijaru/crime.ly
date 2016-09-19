@@ -11,7 +11,7 @@ Utilizing crime reports listed in SF Open Data and Google's Maps API, we created
 When you open the map, all the crime reports from the past year are displayed across San Francisco. We color-coded the different categories, red representing more dangerous crimes and showing what areas you would want to be most careful in. We added a drop down filter for specific categories so that you can also look at what areas certain crimes occur in.
 
 ## Contributing
-Feel free to fork the project and add features or use it for your own projects.
+Feel free to fork the project and add features or use the code in your own projects.
 
 ## License
 Crime.ly is MIT licensed.
