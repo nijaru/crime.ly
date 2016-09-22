@@ -1,10 +1,6 @@
-$(document).ready(function(){
-  console.log("READY")
-  // base URI
+window.initMap = function() {
   url = 'https://data.sfgov.org/resource/7a3q-s79u.json';
-
-  //Map
-  window.initMap = function() {
+  console.log("initializing map")
     //map center
     var myLatLng = {lat: 37.784691, lng:  -122.397804};
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -127,4 +123,20 @@ $(document).ready(function(){
       }
     }
   }
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+  console.log("READY")
+  // base URI
+window.initMap()
+  //Map
+  console.log("initMap called")
 })
+
+
